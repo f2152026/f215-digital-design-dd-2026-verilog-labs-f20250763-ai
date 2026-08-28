@@ -14,17 +14,16 @@
 // 64-bit blocked carry-lookahead adder
 // using sixteen 4-bit CLA blocks
 
-module cla64_blocked(
+// cla64_blocked.v
 
+module cla64_blocked(
   input  [63:0] a,
   input  [63:0] b,
   input         cin,
   output [63:0] sum,
   output        cout
-
 );
 
-  // Carries between blocks
   wire [15:1] c;
 
   cla4 block0 (
