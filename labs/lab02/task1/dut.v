@@ -4,10 +4,10 @@
 // time. Comment out the other one, save, and re-run the simulation.
 
 module DUT (
-    input I0,
-    input I1,
-    input S,
-    output Y
+  input  I0,
+  input  I1,
+  input  S,
+  output Y
 );
 
   // ---- Option 1: dataflow version ----
